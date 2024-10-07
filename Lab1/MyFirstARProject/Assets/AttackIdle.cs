@@ -21,7 +21,7 @@ public class AttackIdle : MonoBehaviour
         DistanceBetweenPlayers = Vector3.Distance(Player1.transform.position, Player2.transform.position);
 
         if (Animatie != null) {
-            if (DistanceBetweenPlayers>=0.05)
+            if (DistanceBetweenPlayers>=0.25)
             {
                 Animatie.SetTrigger("TrIdle");
             }
